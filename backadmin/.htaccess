@@ -1,0 +1,355 @@
+RewriteEngine On
+#RewriteCond %{HTTPS} on
+#RewriteRule (.*) http://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+RewriteRule ^test$ test.php
+RewriteRule ^test/$ test.php/
+
+RewriteRule ^login$ login.php
+RewriteRule ^login/$ login.php/
+
+RewriteRule ^index$ index.php
+RewriteRule ^index/$ index.php
+RewriteRule ^index/([a-zA-Z0-9_-]+)$ index.php?id=$1
+RewriteRule ^index/([a-zA-Z0-9_-]+)/$ index.php?id=$1
+
+RewriteRule ^dashboard$ dashboard.php
+RewriteRule ^dashboard/$ dashboard.php/
+
+RewriteRule ^logout$ logout.php
+RewriteRule ^logout/$ logout.php/
+
+RewriteRule ^forgot-password$ forgot-password.php
+RewriteRule ^forgot-password/$ forgot-password.php
+
+RewriteRule ^reset-password$ reset-password.php
+RewriteRule ^reset-password/$ reset-password.php/
+RewriteRule ^reset-password/([a-zA-Z0-9_-]+)$ reset-password.php?id=$1
+RewriteRule ^reset-password/([a-zA-Z0-9_-]+)/$ reset-password.php?id=$1
+
+RewriteRule ^account-settings$ account-settings.php
+RewriteRule ^account-settings/$ account-settings.php/
+RewriteRule ^account-settings/([a-zA-Z0-9_-]+)$ account-settings.php?tab_name=$1
+RewriteRule ^account-settings/([a-zA-Z0-9_-]+)/$ account-settings.php?tab_name=$1
+
+RewriteRule ^add-country$ add-country.php
+RewriteRule ^add-country/$ add-country.php/
+
+RewriteRule ^add-state$ add-state.php
+RewriteRule ^add-state/$ add-state.php/
+
+RewriteRule ^add-city$ add-city.php
+RewriteRule ^add-city/$ add-city.php/
+
+RewriteRule ^add-user$ add-user.php
+RewriteRule ^add-user/$ add-user.php/
+
+RewriteRule ^account-settings$ account-settings.php
+RewriteRule ^account-settings/$ account-settings.php/
+
+RewriteRule ^view-country$ view-country.php
+RewriteRule ^view-country/$ view-country.php/
+
+RewriteRule ^view-state$ view-state.php
+RewriteRule ^view-state/$ view-state.php/
+
+RewriteRule ^view-city$ view-city.php
+RewriteRule ^view-city/$ view-city.php/
+
+RewriteRule ^view-user$ view-user.php
+RewriteRule ^view-user/$ view-user.php/
+
+RewriteRule ^edit-country$ edit-country.php
+RewriteRule ^edit-country/$ edit-country.php/
+RewriteRule ^edit-country/([a-zA-Z0-9_-]+)$ edit-country.php?id=$1
+RewriteRule ^edit-country/([a-zA-Z0-9_-]+)/$ edit-country.php?id=$1
+
+RewriteRule ^edit-user$ edit-user.php
+RewriteRule ^edit-user/$ edit-user.php/
+RewriteRule ^edit-user/([a-zA-Z0-9_-]+)$ edit-user.php?id=$1
+RewriteRule ^edit-user/([a-zA-Z0-9_-]+)/$ edit-user.php?id=$1
+
+RewriteRule ^edit-state$ edit-state.php
+RewriteRule ^edit-state/$ edit-state.php/
+RewriteRule ^edit-state/([a-zA-Z0-9_-]+)$ edit-state.php?id=$1
+RewriteRule ^edit-state/([a-zA-Z0-9_-]+)/$ edit-state.php?id=$1
+
+RewriteRule ^edit-city$ edit-city.php
+RewriteRule ^edit-city/$ edit-city.php/
+RewriteRule ^edit-city/([a-zA-Z0-9_-]+)$ edit-city.php?id=$1
+RewriteRule ^edit-city/([a-zA-Z0-9_-]+)/$ edit-city.php?id=$1
+
+RewriteRule ^settings$ settings.php
+RewriteRule ^settings/$ settings.php/
+
+RewriteRule ^cms-page$ cms-page.php
+RewriteRule ^cms-page/$ cms-page.php/
+RewriteRule ^cms-page/([a-zA-Z0-9_-]+)$ cms-page.php?id=$1
+RewriteRule ^cms-page/([a-zA-Z0-9_-]+)/$ cms-page.php?id=$1
+
+RewriteRule ^view-home-banner$ view-home-banner.php
+RewriteRule ^view-home-banner/$ view-home-banner.php/
+
+RewriteRule ^add-home-banner$ add-home-banner.php
+RewriteRule ^add-home-banner/$ add-home-banner.php/
+
+RewriteRule ^edit-home-banner$ edit-home-banner.php
+RewriteRule ^edit-home-banner/$ edit-home-banner.php/
+RewriteRule ^edit-home-banner/([a-zA-Z0-9_-]+)$ edit-home-banner.php?id=$1
+RewriteRule ^edit-home-banner/([a-zA-Z0-9_-]+)/$ edit-home-banner.php?id=$1
+
+RewriteRule ^view-category$ view-category.php
+RewriteRule ^view-category/$ view-category.php/
+
+RewriteRule ^add-category$ add-category.php
+RewriteRule ^add-category/$ add-category.php/
+
+RewriteRule ^edit-category$ edit-category.php
+RewriteRule ^edit-category/$ edit-category.php/
+RewriteRule ^edit-category/([a-zA-Z0-9_-]+)$ edit-category.php?id=$1
+RewriteRule ^edit-category/([a-zA-Z0-9_-]+)/$ edit-category.php?id=$1
+
+RewriteRule ^view-sub-category$ view-sub-category.php
+RewriteRule ^view-sub-category/$ view-sub-category.php/
+
+RewriteRule ^add-sub-category$ add-sub-category.php
+RewriteRule ^add-sub-category/$ add-sub-category.php/
+
+RewriteRule ^edit-sub-category$ edit-sub-category.php
+RewriteRule ^edit-sub-category/$ edit-sub-category.php/
+RewriteRule ^edit-sub-category/([a-zA-Z0-9_-]+)$ edit-sub-category.php?id=$1
+RewriteRule ^edit-sub-category/([a-zA-Z0-9_-]+)/$ edit-sub-category.php?id=$1
+
+RewriteRule ^view-sub-sub-category$ view-sub-sub-category.php
+RewriteRule ^view-sub-sub-category/$ view-sub-sub-category.php/
+
+RewriteRule ^add-sub-sub-category$ add-sub-sub-category.php
+RewriteRule ^add-sub-sub-category/$ add-sub-sub-category.php/
+
+RewriteRule ^edit-sub-sub-category$ edit-sub-sub-category.php
+RewriteRule ^edit-sub-sub-category/$ edit-sub-sub-category.php/
+RewriteRule ^edit-sub-sub-category/([a-zA-Z0-9_-]+)$ edit-sub-sub-category.php?id=$1
+RewriteRule ^edit-sub-sub-category/([a-zA-Z0-9_-]+)/$ edit-sub-sub-category.php?id=$1
+
+RewriteRule ^view-product$ view-product.php
+RewriteRule ^view-product/$ view-product.php/
+
+RewriteRule ^add-product$ add-product.php
+RewriteRule ^add-product/$ add-product.php/
+
+RewriteRule ^edit-product$ edit-product.php
+RewriteRule ^edit-product/$ edit-product.php/
+RewriteRule ^edit-product/([a-zA-Z0-9_-]+)$ edit-product.php?id=$1
+RewriteRule ^edit-product/([a-zA-Z0-9_-]+)/$ edit-product.php?id=$1
+
+RewriteRule ^view-product-images$ view-product-images.php
+RewriteRule ^view-product-images/$ view-product-images.php/
+
+RewriteRule ^add-product-images$ add-product-images.php
+RewriteRule ^add-product-images/$ add-product-images.php/
+
+RewriteRule ^edit-product-images$ edit-product-images.php
+RewriteRule ^edit-product-images/$ edit-product-images.php/
+RewriteRule ^edit-product-images/([a-zA-Z0-9_-]+)$ edit-product-images.php?id=$1
+RewriteRule ^edit-product-images/([a-zA-Z0-9_-]+)/$ edit-product-images.php?id=$1
+
+RewriteRule ^view-contact-inquiry$ view-contact-inquiry.php
+RewriteRule ^view-contact-inquiry/$ view-contact-inquiry.php/
+
+RewriteRule ^view-product-inquiry$ view-product-inquiry.php
+RewriteRule ^view-product-inquiry/$ view-product-inquiry.php/
+
+RewriteRule ^view-client-portfolio$ view-client-portfolio.php
+RewriteRule ^view-client-portfolio/$ view-client-portfolio.php/
+
+RewriteRule ^add-client-portfolio$ add-client-portfolio.php
+RewriteRule ^add-client-portfolio/$ add-client-portfolio.php/
+
+RewriteRule ^edit-client-portfolio$ edit-client-portfolio.php
+RewriteRule ^edit-client-portfolio/$ edit-client-portfolio.php/
+RewriteRule ^edit-client-portfolio/([a-zA-Z0-9_-]+)$ edit-client-portfolio.php?id=$1
+RewriteRule ^edit-client-portfolio/([a-zA-Z0-9_-]+)/$ edit-client-portfolio.php?id=$1
+
+RewriteRule ^view-customer-management$ view-customer-management.php
+RewriteRule ^view-customer-management/$ view-customer-management.php/
+
+RewriteRule ^add-customer-management$ add-customer-management.php
+RewriteRule ^add-customer-management/$ add-customer-management.php/
+
+RewriteRule ^edit-customer-management$ edit-customer-management.php
+RewriteRule ^edit-customer-management/$ edit-customer-management.php/
+RewriteRule ^edit-customer-management/([a-zA-Z0-9_-]+)$ edit-customer-management.php?id=$1
+RewriteRule ^edit-customer-management/([a-zA-Z0-9_-]+)/$ edit-customer-management.php?id=$1
+
+
+RewriteRule ^view-country$ view-country.php
+RewriteRule ^view-country/$ view-country.php/
+
+RewriteRule ^add-country$ add-country.php
+RewriteRule ^add-country/$ add-country.php/
+
+RewriteRule ^edit-country$ edit-country.php
+RewriteRule ^edit-country/$ edit-country.php/
+RewriteRule ^edit-country/([a-zA-Z0-9_-]+)$ edit-country.php?id=$1
+RewriteRule ^edit-country/([a-zA-Z0-9_-]+)/$ edit-country.php?id=$1
+
+RewriteRule ^view-state$ view-state.php
+RewriteRule ^view-state/$ view-state.php/
+
+RewriteRule ^add-state$ add-state.php
+RewriteRule ^add-state/$ add-state.php/
+
+RewriteRule ^edit-state$ edit-state.php
+RewriteRule ^edit-state/$ edit-state.php/
+RewriteRule ^edit-state/([a-zA-Z0-9_-]+)$ edit-state.php?id=$1
+RewriteRule ^edit-state/([a-zA-Z0-9_-]+)/$ edit-state.php?id=$1
+
+RewriteRule ^view-city$ view-city.php
+RewriteRule ^view-city/$ view-city.php/
+
+RewriteRule ^add-city$ add-city.php
+RewriteRule ^add-city/$ add-city.php/
+
+RewriteRule ^edit-city$ edit-city.php
+RewriteRule ^edit-city/$ edit-city.php/
+RewriteRule ^edit-city/([a-zA-Z0-9_-]+)$ edit-city.php?id=$1
+RewriteRule ^edit-city/([a-zA-Z0-9_-]+)/$ edit-city.php?id=$1
+
+RewriteRule ^view-area$ view-area.php
+RewriteRule ^view-area/$ view-area.php/
+
+RewriteRule ^add-area$ add-area.php
+RewriteRule ^add-area/$ add-area.php/
+
+RewriteRule ^edit-area$ edit-area.php
+RewriteRule ^edit-area/$ edit-area.php/
+RewriteRule ^edit-area/([a-zA-Z0-9_-]+)$ edit-area.php?id=$1
+RewriteRule ^edit-area/([a-zA-Z0-9_-]+)/$ edit-area.php?id=$1
+
+RewriteRule ^view-menu$ view-menu.php
+RewriteRule ^view-menu/$ view-menu.php/
+
+RewriteRule ^add-menu$ add-menu.php
+RewriteRule ^add-menu/$ add-menu.php/
+
+RewriteRule ^edit-menu$ edit-menu.php
+RewriteRule ^edit-menu/$ edit-menu.php/
+RewriteRule ^edit-menu/([a-zA-Z0-9_-]+)$ edit-menu.php?id=$1
+RewriteRule ^edit-menu/([a-zA-Z0-9_-]+)/$ edit-menu.php?id=$1
+
+RewriteRule ^view-service$ view-service.php
+RewriteRule ^view-service/$ view-service.php/
+
+RewriteRule ^add-service$ add-service.php
+RewriteRule ^add-service/$ add-service.php/
+
+RewriteRule ^edit-service$ edit-service.php
+RewriteRule ^edit-service/$ edit-service.php/
+RewriteRule ^edit-service/([a-zA-Z0-9_-]+)$ edit-service.php?id=$1
+RewriteRule ^edit-service/([a-zA-Z0-9_-]+)/$ edit-service.php?id=$1
+
+RewriteRule ^view-sub-service$ view-sub-service.php
+RewriteRule ^view-sub-service/$ view-sub-service.php/
+
+RewriteRule ^add-sub-service$ add-sub-service.php
+RewriteRule ^add-sub-service/$ add-sub-service.php/
+
+RewriteRule ^edit-sub-service$ edit-sub-service.php
+RewriteRule ^edit-sub-service/$ edit-sub-service.php/
+RewriteRule ^edit-sub-service/([a-zA-Z0-9_-]+)$ edit-sub-service.php?id=$1
+RewriteRule ^edit-sub-service/([a-zA-Z0-9_-]+)/$ edit-sub-service.php?id=$1
+
+RewriteRule ^view-blog$ view-blog.php
+RewriteRule ^view-blog/$ view-blog.php/
+
+RewriteRule ^add-blog$ add-blog.php
+RewriteRule ^add-blog/$ add-blog.php/
+
+RewriteRule ^edit-blog$ edit-blog.php
+RewriteRule ^edit-blog/$ edit-blog.php/
+RewriteRule ^edit-blog/([a-zA-Z0-9_-]+)$ edit-blog.php?id=$1
+RewriteRule ^edit-blog/([a-zA-Z0-9_-]+)/$ edit-blog.php?id=$1
+
+
+RewriteRule ^view-bank$ view-bank.php
+RewriteRule ^view-bank/$ view-bank.php/
+
+RewriteRule ^add-bank$ add-bank.php
+RewriteRule ^add-bank/$ add-bank.php/
+
+RewriteRule ^edit-bank$ edit-bank.php
+RewriteRule ^edit-bank/$ edit-bank.php/
+RewriteRule ^edit-bank/([a-zA-Z0-9_-]+)$ edit-bank.php?id=$1
+RewriteRule ^edit-bank/([a-zA-Z0-9_-]+)/$ edit-bank.php?id=$1
+
+RewriteRule ^view-loan-inquiry$ view-loan-inquiry.php
+RewriteRule ^view-loan-inquiry/$ view-loan-inquiry.php/
+
+
+RewriteRule ^edit-loan-inquiry$ edit-loan-inquiry.php
+RewriteRule ^edit-loan-inquiry/$ edit-loan-inquiry.php/
+RewriteRule ^edit-loan-inquiry/([a-zA-Z0-9_-]+)$ edit-loan-inquiry.php?id=$1
+RewriteRule ^edit-loan-inquiry/([a-zA-Z0-9_-]+)/$ edit-loan-inquiry.php?id=$1
+
+
+# compress text, html, javascript, css, xml:
+<IfModule mod_deflate.c>
+  # Compress HTML, CSS, JavaScript, Text, XML and fonts
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+  AddOutputFilterByType DEFLATE application/x-font
+  AddOutputFilterByType DEFLATE application/x-font-opentype
+  AddOutputFilterByType DEFLATE application/x-font-otf
+  AddOutputFilterByType DEFLATE application/x-font-truetype
+  AddOutputFilterByType DEFLATE application/x-font-ttf
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE font/opentype
+  AddOutputFilterByType DEFLATE font/otf
+  AddOutputFilterByType DEFLATE font/ttf
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE image/x-icon
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/xml
+
+  # Remove browser bugs (only needed for really old browsers)
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+  Header append Vary User-Agent
+</IfModule>
+
+# Leverage Browser Caching
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg "access 1 year"
+  ExpiresByType image/jpeg "access 1 year"
+  ExpiresByType image/gif "access 1 year"
+  ExpiresByType image/png "access 1 year"
+  ExpiresByType text/css "access 1 month"
+  ExpiresByType text/html "access 1 month"
+  ExpiresByType application/pdf "access 1 month"
+  ExpiresByType text/x-javascript "access 1 month"
+  ExpiresByType application/x-shockwave-flash "access 1 month"
+  ExpiresByType image/x-icon "access 1 year"
+  ExpiresDefault "access 1 month"
+</IfModule>
+<IfModule mod_headers.c>
+  <filesmatch "\.(ico|flv|jpg|jpeg|png|gif|css|swf)$">
+  Header set Cache-Control "max-age=2678400, public"
+  </filesmatch>
+  <filesmatch "\.(html|htm)$">
+  Header set Cache-Control "max-age=7200, private, must-revalidate"
+  </filesmatch>
+  <filesmatch "\.(pdf)$">
+  Header set Cache-Control "max-age=86400, public"
+  </filesmatch>
+  <filesmatch "\.(js)$">
+  Header set Cache-Control "max-age=2678400, private"
+  </filesmatch>
+</IfModule>
